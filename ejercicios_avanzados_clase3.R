@@ -2,111 +2,99 @@
 # Prerrequisito: haber completado básicos
 # La respuesta de los ejercicios avanzados está en todos los ejercicios básicos
 
+# -------------------------------------------------------------------
+# Vectores y operadores lógicos
+# -------------------------------------------------------------------
+
 letters
 
+c("a", "b", "42") %in% letters
+letters %in% c("a", "b", "42")
 
-c("a","b","42")%in%letters
+# El siguiente ejercicio es complicado, tómese su tiempo
+letters[letters %in% c("a", "b", "42")]
 
+LETTERS[letters %in% c("a", "b", "42")]
 
-letters%in%c("a","b","42")
+length(c("a", "b", "42") %in% letters)
+length(letters %in% c("a", "b", "42"))
 
-
-# el siguiente ejercicio es complicado, tomese su tiempo
-letters[ letters%in%c("a","b","42") ]
-
-
-LETTERS[ letters%in%c("a","b","42") ]
-
-
-length( c("a","b","42") %in% letters )
-
-
-length( letters%in%c("a","b","42") )
+# El siguiente comando es raro, entienda lo que hace
+# Vea qué letras no aparecen y si existe un patrón
+letters[c(TRUE, TRUE, FALSE)]
 
 
-# el siguiente comando es raro, entienda lo que hace
-# vea que letras no aparecen y si hay un patron
-letters[c(TRUE,TRUE,FALSE)]
+# -------------------------------------------------------------------
+# Datasets integrados en R
+# -------------------------------------------------------------------
 
-
-# algunos datasets ya vienen integrados en R
+# Algunos datasets ya vienen integrados en R
 ?cars
-
 
 cars
 
+?head
 
-length(cars[,1])
+head(cars)
 
+# Slicing
+cars[, 1]
 
-cars[1:5,1:2]
+length(cars[, 1])
+cars[1:5, 1:2]
 
+is_fast <- cars[, 1] > 15
+is_slow <- cars[, 1] <= 15
 
-is_fast <- cars[,1] >15
+cars[1:5, 2]
+cars[is_fast, 2]
 
-
-is_slow <- cars[,1] <=15
-
-
-cars[ 1:5, 2]
-
-
-cars[is_fast,2]
-
+# -------------------------------------------------------------------
+# Boxplots
+# -------------------------------------------------------------------
 
 ?boxplot
 
-
 boxplot(1:15)
 
-# produzca un diagrama de caja que compare la velocidad de frenado
+# Produzca un diagrama de caja que compare la distancia de frenado
 # de carros rápidos y carros lentos
 
+# Ejecute la ayuda de cars y reproduzca el primer gráfico que aparece en la sección de ayuda
 
-# ejecute la ayuda de cars y reproduzca el primer gráfico
+# -------------------------------------------------------------------
+# Dataset ToothGrowth
+# -------------------------------------------------------------------
 
-
-# Lea la descripción de el siguiente dataset para entender su origen y las variables
+# Lea la descripción del siguiente dataset para entender su origen y las variables
 ?ToothGrowth
-
 
 ToothGrowth
 
 # Cuando el data frame es muy grande puede usar el comando head
-# esto le muestra las primeras 6 hileras
+# Esto le muestra las primeras 6 hileras
 head(ToothGrowth)
 
-
-# escribir ToothGrowth es latoso
+# Escribir ToothGrowth es latoso
 to <- ToothGrowth
 
-
-to[,1]
-
-
+#slicing
+to[, 1]
 to$len
 
-
 # El siguiente comando es nuevo pero muy útil
-# este comando le ayudará a explorar sus datos
+# Este comando le ayudará a explorar sus datos
 summary(to)
 
-
-to[,2]
-
-
+to[, 2]
 to$supp
-
 
 summary(to$supp)
 
-
 to$supp == "VC"
 
-
-
 # Produzca un boxplot que compare el efecto en el crecimiento de dientes
-# dependiendo del suplemento (acido ascorbico o jugo de naranja)
+# dependiendo del suplemento (ácido ascórbico o jugo de naranja)
 
-
-# Si tiene tiempo añada notch a los boxplots, colores y labels y un título
+# Si tiene tiempo añada notch a los boxplots, colores, labels y un título
+# puede ver las opciones en la ayuda de boxplot

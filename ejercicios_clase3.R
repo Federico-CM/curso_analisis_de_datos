@@ -4,11 +4,11 @@
 
 
 ### Ejercicios ###
-# Trate de entender que hace cada linea
-# Antes de ejecutar cada linea trate de predecir lo que verá al ejecutarla
-# Añada notas después de cada linea, las notas comienzan con el símbolo #
-# Para ejecutar una linea en la cual está el cursor, apriete "control + enter"
-# Si encuentra un error al ejecutar una linea trate de entender cual es el error
+# Trate de entender qué hace cada línea
+# Antes de ejecutar cada línea trate de predecir lo que verá al ejecutarla
+# Añada notas después de cada línea, las notas comienzan con el símbolo #
+# Para ejecutar una línea en la cuál está el cursor, presione "control + enter"
+# Si encuentra un error al ejecutar una línea trate de entender cual es el error
 
 ### limpie todos los objetos que tenga guardados ###
 

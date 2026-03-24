@@ -1,11 +1,17 @@
-### Ejercicios normales ###
-# Trate de entender que hace cada linea
-# Antes de ejecutar cada linea trate de predecir lo que verá al ejecutarla
-# Añada notas después de cada linea, las notas comienzan con el símbolo #
-# Para ejecutar una linea en la cual está el cursor, apriete "control + enter"
-# Si encuentra un error al ejecutar una linea trate de entender cual es el error
+### Clase 4 – Operaciones matemáticas, vectores, muestreo y manipulación de datos en R ### 
+# Objetivo: practicar operaciones matemáticas básicas y logarítmicas, uso de vectores y secuencias,
+# muestreo aleatorio con sample(), manipulación de texto y letras, evaluación de condiciones lógicas
+# e indexación booleana, y creación/consulta de data frame en R base.
 
-### limpie todos los objetos que tenga guardados ###
+### Ejercicios ###
+# Trate de entender qué hace cada línea
+# Antes de ejecutar cada línea trate de predecir lo que verá al ejecutarla
+# Añada notas después de cada línea, las notas comienzan con el símbolo #
+# Para ejecutar una línea en la cuál está el cursor, presione "control + enter"
+# Si encuentra un error al ejecutar una línea trate de entender cual es el error
+
+# El siguiente comando elimina todos los objetos del entorno actual
+rm(list = ls())
 
 ?rep
 
@@ -40,8 +46,7 @@ rep("a",5)
 sum(1:3)
 
 
-# recuerde que el paréntesis cuadrado permite sub-selecciones
-# ESTO ES MUY IMPORTANTE!
+# Importante: los corchetes permiten hacer subselecciones
 (2:6)[1]
 
 
@@ -64,13 +69,13 @@ letters[6]
 
 
 
-# escriba un comando que le regrese la letra "b"
+# escriba un comando que le devuelva la letra "b"
 
 
 2:6
 
 
-# escriba un comando que le regrese las letras "b,c,d,e,f"
+# escriba un comando que le devuelva las letras "b,c,d,e,f"
 
 
 
@@ -83,7 +88,7 @@ letters[LETTERS == "R"]
 1:5 %in% 4:6
 
 
-# recuerde que se pueden hacer sub-selecciones con valores boleanos
+# recuerde que se pueden hacer subselecciones con valores booleanos
 # ESTO ES MUY IMPORTANTE!
 (1:5)[c(FALSE, FALSE, FALSE, FALSE, TRUE)]
 
@@ -128,14 +133,14 @@ grupo_historia == ""
 grupo_historia[ grupo_historia == "" ]
 
 
-# ponga atención en el ultimo elemento del grupo de historia
+# ponga atención en el último elemento del grupo de historia
 grupo_historia
 
 
 grupo_historia[ grupo_historia == "" ] <- "josefina"
 
 
-# ponga atención en el ultimo elemento del grupo de historia
+# ponga atención en el último elemento del grupo de historia
 grupo_historia
 
 
@@ -259,7 +264,7 @@ cars$dist[1:5]
 # observe el siguiente plot
 plot(cars$speed,cars$dist)
 
-# ugh nuestros datos estan en medidas Americanas
+# nuestros datos están en medidas Americanas
 # haga un gráfico usando un sistema métrico
 # una milla es 1.609344 km
 # un pie es 0.3048 m
@@ -268,6 +273,6 @@ plot(cars$speed,cars$dist)
 ?plot.default
 
 
-# vuelva a hacer su gráfico pero marque los ejes
+# vuelva a hacer su gráfico pero etiquete los ejes
 # use los argumentos xlab y ylab
 

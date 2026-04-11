@@ -1,4 +1,4 @@
-### Clase 2 – Introduccion a R ###
+### Clase 1 – Introduccion a R ###
 # Objetivo: familiarizarse con operaciones matemáticas, creación y manipulación
 # de vectores.
 
@@ -47,9 +47,9 @@
 
 "Esteban"
 
-"Esteban" + 2
+"Esteban" + 2     # Error intencional
 
-"8" + 2
+"8" + 2           # Error intencional
 
 8 + 2
 
@@ -58,13 +58,13 @@
 
 ### VARIABLES ###
 
-amigo
+amigo             # Error intencional, todavía not está definido
 
 amigo <- "Esteban"
 
 amigo
 
-puntos
+puntos            # Error intencional
 
 puntos <- 10
 
@@ -75,13 +75,13 @@ puntos
 
 c("Esteban","Laura","Diego")
 
-alumno
+alumno            # Error intencional
 
 alumno <-c("Esteban","Laura","Diego")
 
 alumno
 
-calificacion
+calificacion      # Error intencional
 
 calificacion<-8:10
 
@@ -103,11 +103,14 @@ alumno[1]
 
 alumno[2]
 
+# Ejecticio: Escriba un comando que seleccione el tercer alumno
+
+
 alumno[1:2]
 
 alumno[2:3]
 
-alumno[1:6]
+alumno[1:6]      # Error intencional
 
 mi_tabla
 

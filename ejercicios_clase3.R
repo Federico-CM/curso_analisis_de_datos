@@ -1,7 +1,8 @@
 ### Clase 3 – Operaciones básicas, lógica y manipulación de data frames ###
-# Objetivo: practicar funciones básicas (sum, mean, log), muestreo con sample(),
-# operaciones lógicas e indexación booleana, y crear/consultar data frames en R base.
-
+# Objetivos:
+# 1. Practicar operaciones matemáticas y comparaciones lógicas
+# 2. Usar vectores e indexación con posiciones y con valores booleanos
+# 3. Usar %in% para comparar conjuntos de valores
 
 ### Ejercicios ###
 # Trate de entender qué hace cada línea
@@ -10,7 +11,10 @@
 # Para ejecutar una línea en la cuál está el cursor, presione "control + enter"
 # Si encuentra un error al ejecutar una línea trate de entender cual es el error
 
-### limpie todos los objetos que tenga guardados ###
+# El siguiente comando elimina todos los objetos del entorno actual
+rm(list = ls())
+
+### 1. Operaciones básicas y comparaciones lógicas ###
 
 sum(1:3)
 
@@ -47,6 +51,7 @@ log(27,3)
 
 log(16,2)
 
+### 2. Usar vectores e indexación con posiciones y con valores booleanos ###
 
 set.seed(42)
 
@@ -54,11 +59,10 @@ set.seed(42)
 my_data <- sample(1:1000,5)
 
 
-# log10 transform my_data
+# Escriba un comando que produzca el logaritmo base 10 de my_data
 
 
-
-### Existen algunos datos que R contiene ###
+# Existen algunos datos (pi, letters, cars) que R base contiene
 
 pi
 
@@ -90,15 +94,15 @@ length(letters)
 sample(letters,10)
 
 
-# seleccione 40 elementos de letters con la función sample()
-# si obtiene un error, vea las diapositivas
+# Seleccione 40 elementos de letters con la función sample()
+# Si obtiene un error, vea las diapositivas
 
 
-# defina el vector SARTTEL como las letras de la Z a la A
-# si no recuerda como invertir un vector, vea los ejercicios anteriores
+# Defina el vector SARTTEL como las letras de la Z a la A
+# Di no recuerda como invertir un vector, vea los ejercicios anteriores
 
 
-# defina LETTE como todas las letras mayusculas menos las dos últimas
+# Defina LETTE como todas las letras mayusculas menos las dos últimas
 
 
 test1 <- c(1:5)
@@ -113,6 +117,7 @@ test3 <- c(test1,test2)
 # defina lettersLETTERS como un vector que contiene todas las letras minusculas y mayusculas
 
 
+###  3. Usar %in% para comparar conjuntos de valores ###
 # Si la clase anterior no realizó los ejercicios avanzados esto es nuevo
 # tomese su tiempo para entender lo que sucede, esto es importante
 1:2 %in% 1:6
@@ -148,30 +153,32 @@ my_vector[ mayor_a_2 ]
 (1:4)[c(TRUE,TRUE,FALSE,FALSE)]
   
   
-# el siguiente comportamiento es raro
-# tomese su tiempo para entender que sucede
+# El siguiente comportamiento es raro
+# Tomese su tiempo para entender que sucede
 (1:6)[c(TRUE,FALSE)]
 
-
-# calcule 1.25 a la potencia 27
-
-
-# defina my_values como la secuencia de 100 a 200
+### 4. Breve repaso ###
+# Calcule 1.25 a la potencia 27
 
 
-# sume todos los valores de my_values
+# Defina my_values como la secuencia de 100 a 200
 
 
-# establezca el estado interno como 42
-# si no recuerda el comando, vea las diapositivas de esta clase
+# Sume todos los valores de my_values
 
 
-# obtenga 25 valores de my_values con la función sample() y asignelos al objeto selected_values
+# Establezca el estado interno como 42
+# Si no recuerda el comando, vea las diapositivas de esta clase
 
 
-# calcule cuantos elementos de selected_values tienen un valor mayor o igual a 150
-# si tiene problemas para esto, vea las diapositivas en la sección de sum
+# Obtenga 25 valores de my_values con la función sample() y asignelos al objeto selected_values
 
+
+# Calcule cuantos elementos de selected_values tienen un valor mayor o igual a 150
+# Si tiene problemas para esto, vea las diapositivas en la sección de sum
+
+
+### 5. Data frames y subselección ###
 
 students <- c("Ana","Fede","Diego","Eva")
 

@@ -1,16 +1,20 @@
 ### Clase 5 – Exploración de datos, carga de CSV y valores ausentes ###
-# Objetivo: aprender a cargar, explorar y filtrar datos tabulares en R,
-#           trabajar con archivos CSV, y manejar valores ausentes.
-#
-# Instrucciones:
-# - Antes de ejecutar cada línea, prediga el resultado.
-# - Añada notas propias usando el símbolo #.
-# - Para ejecutar la línea donde está el cursor, use Ctrl+Enter.
-# - Si encuentra un error, trate de entender su causa antes de corregirlo.
+# Objetivos
+# 1. Aprender a cargar datos desde archivos CSV en R
+# 2. Explorar la estructura y contenido de data frames
+# 3. Filtrar y seleccionar datos según condiciones
+# 4. Identificar y manejar valores ausentes (NA)
+# 5. Usar funciones básicas para resumir datos
+# 6. Aplicar buenas prácticas en la limpieza de datos
 
+### Ejercicios ###
+# Trate de entender qué hace cada línea
+# Antes de ejecutar cada línea trate de predecir lo que verá al ejecutarla
+# Añada notas después de cada línea, las notas comienzan con el símbolo #
+# Para ejecutar una línea en la cuál está el cursor, presione "control + enter"
+# Si encuentra un error al ejecutar una línea trate de entender cuál es el error
 
-rm(list = ls())
-
+# Antes de comenzar, elimine todos los objetos del entorno actual
 
 ### Sección 1 – Exploración del dataset cars ###
 

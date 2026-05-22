@@ -1,0 +1,34 @@
+Introducción: ¿Qué es R y por qué aprenderlo?
+
+R es mucho más que un lenguaje de programación: es una forma de pensar el análisis de datos. Nació en el mundo académico, en el seno de la estadística y conserva hasta hoy esa esencia. A diferencia de lenguajes de propósito general, R no fue diseñado para construir aplicaciones, sino para comprender datos. Esta distinción no es menor; define su sintaxis, sus estructuras, su flujo de trabajo y, sobre todo, la manera en que invita al usuario a interactuar con la información.
+
+El lenguaje está orientado a leer datos, transformarlos, explorarlos, visualizarlos y modelarlos. No se requieren la instalación de librerias o extensiones o adaptar estructuras diseñadas para el desarrollo de software. Desde el primer momento usted manipulará datos y descubrirá que, muchas de las técnicas fundamentales del análisis estadístico, modelos lineales, pruebas de hipótesis y distribuciones de probabilidad, están disponibles de manera nativa. Esto convierte a R en un entorno completo y una herramienta sin igual para la enseñanza de análisis de datos.
+
+Su potencia no radica únicamente en sus capacidades técnicas, sino en su filosofía de trabajo. R favorece un enfoque iterativo e interactivo: se ejecutan comandos, se observan resultados, se ajusta el análisis y se vuelve a intentar. Este ciclo continuo de prueba y error no es una debilidad, sino una fortaleza. Permite al analista explorar, formular hipótesis, equivocarse y aprender de manera activa. En lugar de exigir soluciones perfectas desde el inicio, R facilita el descubrimiento progresivo.
+
+Otra característica distintiva es su tolerancia frente a la imperfección de los datos. En el mundo real, los datos rara vez son limpios o completos. R, en lugar de detener el proceso ante cada inconsistencia, suele emitir advertencias y continuar. Esto no significa que los errores deban ignorarse, sino que el lenguaje permite trabajar con datos imperfectos mientras se diagnostican y corrigen los problemas. Esta flexibilidad es esencial en contextos reales de investigación.
+
+Además, R es un lenguaje abierto, gratuito y multiplataforma. Puede utilizarse en Windows, macOS y Linux sin restricciones. Esta apertura no solo reduce barreras de acceso, sino que promueve prácticas fundamentales como la transparencia y la reproducibilidad. En un contexto académico, donde los resultados deben ser verificables, estas cualidades son indispensables.
+
+No es casualidad que R haya sido adoptado ampliamente en la academia. Muchas innovaciones metodológicas en estadística y ciencia de datos se implementan primero en R. Esto lo convierte en un lenguaje dinámico, en constante evolución, y estrechamente vinculado a la investigación de frontera. Aunque su uso es particularmente fuerte en áreas como la biomedicina y la bioinformática, su alcance es mucho más amplio: economía, ciencias sociales, ingeniería, ecología y muchas otras disciplinas lo utilizan como herramienta central de análisis.
+
+== Sobre este libro y su enfoque ==
+
+Este libro no pretende enseñar R como un conjunto de instrucciones que deben memorizarse. Por el contrario, busca desarrollar una comprensión profunda de cómo funciona el lenguaje y cómo se utiliza para pensar problemas de análisis de datos.
+
+El enfoque pedagógico está diseñado especialmente para estudiantes de posgrado, quienes no solo necesitan aplicar técnicas, sino también comprender sus fundamentos y limitaciones. A lo largo del libro, se enfatizan cuatro competencias clave:
+
+Comprender cómo funcionan los objetos y las funciones en R
+Desarrollar habilidades sólidas de manipulación de datos
+Identificar, diagnosticar y corregir errores
+Razonar sobre problemas en lugar de memorizar soluciones
+
+Los contenidos han sido desarrollados y refinados a lo largo de varios años de enseñanza, incorporando la experiencia en el aula y la retroalimentación de estudiantes. Esto se refleja en una estructura progresiva, donde cada concepto se introduce de manera gradual y cada ejercicio se construye sobre lo aprendido previamente.
+
+Más que ofrecer respuestas, este libro busca fomentar preguntas. Se alienta al lector a experimentar, explorar y equivocarse. En el análisis de datos, el error no es un obstáculo; es parte del proceso de aprendizaje.
+
+Una invitación
+
+Aprender R no es solo adquirir una herramienta técnica; es adoptar una manera de pensar. Es aprender a dialogar con los datos, a cuestionarlos, a transformarlos y a extraer de ellos conocimiento significativo.
+
+Este libro es una invitación a ese proceso. 
